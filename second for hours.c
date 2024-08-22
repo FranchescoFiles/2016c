@@ -1,5 +1,5 @@
 #include <stdio.h>
-//porque_recordar_Es_volver_a_vivir_ejercicios_que_hacia_en.2016_lo_tenia_en_eldisco_E.bitch
+//scritps.01.01.01
 void convertir_tiempo() {
     int segundos, horas, minutos;
 
