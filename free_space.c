@@ -7,16 +7,16 @@ void bytes_to_tb_gb_mb(unsigned long long bytes, double *tb, double *gb, double 
     *mb = bytes / (1024.0 * 1024);
 }
 
-//aqui hace la conversion. bitch
+//aqui hace la conversion.|
 void convert_storage(const char *device_id, unsigned long long free_space, unsigned long long size) {
     double free_space_tb, free_space_gb, free_space_mb;
     double size_tb, size_gb, size_mb;
 
-//convierte_el_espacio_libre y tamaño-total    
+//convierte_el_espacio_libre_y_tamaño-total    
     bytes_to_tb_gb_mb(free_space, &free_space_tb, &free_space_gb, &free_space_mb);
     bytes_to_tb_gb_mb(size, &size_tb, &size_gb, &size_mb);
 
-//imprime bitch.    
+//print.    
     printf("\nDeviceID: %s\n", device_id);
     printf("FreeSpace: %llu bytes\n", free_space);
     printf("   En TB: %.2f TB\n", free_space_tb);
@@ -29,12 +29,12 @@ void convert_storage(const char *device_id, unsigned long long free_space, unsig
 }
 
 int main() {
-    //define los valores,id,size-libre and tamaño_total_en_bytes. bitch
+    //define los valores,id,size-libre and tamaño_total_en_bytes
     const char *device_id = "C:"; //igual aqui
-    unsigned long long free_space = 171400630272; //cambia esta webada en tu caso
-    unsigned long long size = 254695960576; //igual aqui cambialo en tu caso
+    unsigned long long free_space = 171400630272; //cambia esto en tu caso
+    unsigned long long size = 254695960576; //igual aqui cambialo
 
-    //llama la funcion y realiza la conversion. bitch
+    //llama la funcion y realiza la conversion
     convert_storage(device_id, free_space, size);
 
     return 0;
